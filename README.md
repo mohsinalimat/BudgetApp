@@ -11,4 +11,6 @@ Open terminal <br />
 Navigate to the project folder <br />
 Run pod install <br />
 Open RealmBudget.xcworkspace <br />
+Select "Show the issue navigator" <br />
+Update to recommended settings (2 times) <br />
 Build
