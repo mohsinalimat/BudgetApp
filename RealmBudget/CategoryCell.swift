@@ -34,7 +34,7 @@ class CategoryCell: UICollectionViewCell {
     
     func setupView() {
         addSubview(nameLabel)
-        addConstraintsWithFormat("H:|-8-[v0]-8-|", views: nameLabel)
+        addConstraintsWithFormat("V:|[v0]|", views: nameLabel)
         addConstraintsWithFormat("H:|-8-[v0]-8-|", views: nameLabel)
     }
 }

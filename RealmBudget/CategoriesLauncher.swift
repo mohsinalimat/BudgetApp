@@ -82,9 +82,9 @@ class CategoriesLauncher: NSObject, UICollectionViewDataSource, UICollectionView
                 self.collectionView.frame = CGRect(x: 0, y: window.frame.height, width: self.collectionView.frame.width, height: self.collectionView.frame.height)
             }
         }) { (completed: Bool) in
-            if self.selectedItem.name != "" {
+            if let name = self.selectedItem?.name {
                 self.homeController?.selectedCategory = self.selectedItem
-                self.homeController?.labelCategory.text = self.selectedItem.name
+                self.homeController?.labelCategory.text = name
             }
         }
     }
